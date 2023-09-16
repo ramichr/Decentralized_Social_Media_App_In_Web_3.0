@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .App-header {
+    font-size: calc(8px + 1.5vmin);
+  }
+
+  .content,
+  .mx-auto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-12.my-3.mx-auto {
+    width: 95%;
+  }
+}
+
+.profile-image {
+  width: 500px;
+}
+
+.content {
+  max-width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .profile-image {
+    width: 300px;
+  }
+
+  .mb-3 {
+    margin-bottom: 2rem !important;
+  }
+
+  .content {
+    max-width: 70%;
+  }
+
+  .spacing-bottom {
+    padding-bottom: 20px;
+  }
+  .spacing-top {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Bootstrap lg breakpoint */
+  .border-bottom-lg {
+    border-bottom: 1px solid grey;
+  }
+}
